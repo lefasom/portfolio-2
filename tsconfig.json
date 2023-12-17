@@ -8,14 +8,8 @@
       "@/components": [
         "src/components/*"
       ],
-      "@/public": [
-        "public/*"
-      ],
       "@/lib": [
         "src/lib/*"
-      ],
-      "@/public/": [
-        "public/*"
       ]
     },
     "jsx": "react-jsx",
