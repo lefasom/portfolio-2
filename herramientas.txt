@@ -1,0 +1,5 @@
+npm create astro@latest
+npx astro add tailwind
+npx astro add vercel
+npx astro add svelte
+npx astro add react

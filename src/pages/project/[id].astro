@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { proyectos } from "../../lib/proyectos/proyectos";
+import Presentation from "@/components/Presentation.svelte";
+
+const { id } = Astro.params;
+const value = proyectos.find((proyecto) => proyecto.id.toString() === id);
+---
+
+<Layout title="Leonardo Fabián Sombra">
+    <Presentation />
+    <div class="bg-gradient-to-t from-blue-900 to-blue-400">
+        <a class="relative font-semibold text-zinc-100 top-2 left-2 text-xl font-sans" href="/">Volver</a>
+        <div class="relative w-full h-screen m-auto">
+            <div
+                id="proyecto-container"
+                class="flex flex-col m-auto p-2"
+                transition:name=`project ${value?.id} box`
+            >
+                <img
+                    class="m-auto w-1/2 object-cover border-2 border-gray-100"
+                    src={value?.src}
+                    alt={`Imagen ${value?.id}`}
+                    transition:name=`project ${id} image`
+                />
+                <div class="flex flex-col pt-5">
+                    <h1
+                        class="text-zinc-100 text-center p-2 text-4xl"
+                        transition:name=`project ${id} p`
+                    >
+                        {value?.name}
+                    </h1>
+                    <span
+                        class="text-blue-200 text-center p-2 text-4xl"
+                        transition:name=`project ${id} span`
+                    >
+                        {value?.tecno}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+<style></style>
