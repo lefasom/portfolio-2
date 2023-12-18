@@ -11,7 +11,7 @@ export const proyectos: Proyecto[] = [
     {
         id: 1,
         name: "Chatea",
-        src: "images/chatea3.png",
+        src: "../images/chatea3.png",
         cod: {
             front: ["https://github.com/lefasom/front-chatea", "faCode"],
             back: ["https://github.com/lefasom/back-chatea", "faCode"],
@@ -22,7 +22,7 @@ export const proyectos: Proyecto[] = [
 {
     id: 2,
     name: "La Consulta",
-    src: "images/verduleria.png",
+    src: "../images/verduleria.png",
     cod: {
         "front": ['https://github.com/lefasom/verduleria_la_consulta_next.js', 'faCode'],
         'demo': ["https://verdulerialaconsultanext.vercel.app/", 'faLink'],
@@ -33,7 +33,7 @@ export const proyectos: Proyecto[] = [
 {
     id: 3,
     name: "La galeria",
-    src: "images/blog.png",
+    src: "../images/blog.png",
     cod: {
         "front": ['https://github.com/lefasom/blogs-of-photo', 'faCode'],
         "demo": ["https://blogs-of-photo-git-main-lefasom.vercel.app/", 'faLink'],
@@ -44,7 +44,7 @@ export const proyectos: Proyecto[] = [
 {
     id: 4,
     name: "Clon de IG",
-    src: "images/Instagram-clone.png",
+    src: "../images/Instagram-clone.png",
     cod: {
         "front": ['https://github.com/lefasom/clon-instagram', 'faCode'],
         'demo': ["https://my-red-social.vercel.app/Perfil", 'faLink'],
@@ -56,7 +56,7 @@ export const proyectos: Proyecto[] = [
 {
     id: 5,
     name: "Control de precios",
-    src: "images/apk.png",
+    src: "../images/apk.png",
     cod: {
         "front": ['https://github.com/lefasom/crud-native', 'faCode'],
         "Apk": ['https://expo.dev/artifacts/eas/2T8Y91k8CGEhD8KfJ7NNxV.apk', 'faLink'],
