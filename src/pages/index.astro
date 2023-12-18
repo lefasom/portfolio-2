@@ -1,11 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Galery from "@/components/Galery.astro";
-import Presentation from "@/components/Presentation.svelte";
 import { proyectos } from "@/lib/proyectos/proyectos";
+import Footer from "@/components/Footer.svelte";
 ---
 
 <Layout title="Leonardo Fabián Sombra">
-	<Presentation />
 	<Galery client:load proyectos={proyectos} />
+	<Footer />
 </Layout>
