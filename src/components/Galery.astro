@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { type Proyecto } from "../lib/proyectos/proyectos.ts";
+import type { Proyecto } from "../lib/proyectos/proyectos";
 
 interface Props {
 	proyectos: Proyecto[];
@@ -8,21 +8,22 @@ interface Props {
 
 const { proyectos } = Astro.props;
 ---
-
 <Layout title="Leonardo Fabián Sombra" >
-    <div  id="grid" class="relative pt-20 bg-gradient-to-t from-blue-900 to-blue-400 w-full m-auto pb-[100px]">
-        {proyectos.map((value) => (
-            <a  
-            href={`/project/${value.id}`}
-            class=" w-11/12 h-[310px]"
-            // transition:name=`project ${value.id} box`
-            >
-                <img class="w-11/12 h-[310px] object-cover border-2 border-gray-100" src={value.src} alt={`Imagen ${value.id}`} 
-                // transition:name=`project ${value.id} image`
-            />
-            </a>
-            ))}
-    </div>
+
+<div  id="grid" class="relative pt-20 bg-gradient-to-t from-blue-900 to-blue-400 w-full m-auto pt-7 pb-[100px]">
+    {proyectos.map((value) => (
+         <a  
+        href={`/project/${value.id}`}
+        class=" w-11/12 h-[310px]"
+        transition:name=`project ${value.id} box`
+        >
+            <img class="w-11/12 h-[310px] object-cover border-2 border-gray-100" src={value.src} alt={`Imagen ${value.id}`} 
+            transition:name=`project ${value.id} image`
+        />
+        </a>
+        ))}
+</div>
+
 </Layout>
 <style>
     #grid {
@@ -37,6 +38,6 @@ const { proyectos } = Astro.props;
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
         row-gap: 3%;
-        }
+    }
     }
 </style>
