@@ -1,4 +1,4 @@
-<!-- ---
+---
 import Layout from "../layouts/Layout.astro";
 import type { Proyecto } from "../lib/proyectos/proyectos";
 
@@ -10,7 +10,7 @@ const { proyectos } = Astro.props;
 ---
 <Layout title="Leonardo Fabián Sombra" >
 
-<div  id="grid" class="relative pt-20 bg-gradient-to-t from-blue-900 to-blue-400 w-full m-auto pt-7 pb-[100px]">
+<div  id="grid" class="relative pt-20 bg-gradient-to-t from-blue-900 to-blue-400 w-full m-auto pb-[100px]">
     {proyectos.map((value) => (
          <a  
         href={`/project/${value.id}`}
@@ -40,4 +40,4 @@ const { proyectos } = Astro.props;
         row-gap: 3%;
     }
     }
-</style> -->
+</style>
