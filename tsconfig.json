@@ -10,6 +10,9 @@
       ],
       "@/lib": [
         "src/lib/*"
+      ],
+      "@/lib/proyectos": [
+        "src/lib/proyectos/*"
       ]
     },
     "jsx": "react-jsx",
