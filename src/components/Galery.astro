@@ -17,7 +17,7 @@ const { proyectos } = Astro.props;
             class=" w-11/12 h-[310px]"
             transition:name=`project ${value.id} box`
             >
-                <img class="w-11/12 h-[310px] object-cover border-2 border-gray-100" src={value.src} alt={`Imagen ${value.id}`} 
+                <img class="w-11/12 h-[310px] max-md:w-full object-cover border-2 border-gray-100" src={value.src} alt={`Imagen ${value.id}`} 
                 transition:name=`project ${value.id} image`
             />
             </a>
