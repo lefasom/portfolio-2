@@ -10,14 +10,14 @@ const { proyectos } = Astro.props;
 ---
 
 <Layout title="Leonardo Fabián Sombra" >
-    <div  id="grid" class="relative pt-20 bg-gradient-to-t from-blue-900 to-blue-400 w-full m-auto pb-[100px]">
+    <div  id="grid" class="relative pt-20 pb-[30rem] bg-gradient-to-t from-blue-900 to-blue-400 w-full m-auto ">
         {proyectos.map((value) => (
             <a  
             href={`/project/${value.id}`}
-            class=" w-11/12 h-[310px]"
+            class=" w-11/12 h-full"
             transition:name=`project ${value.id} box`
             >
-                <img class="w-11/12 h-[310px] max-md:w-full object-cover border-2 border-gray-100" src={value.src} alt={`Imagen ${value.id}`} 
+                <img class="w-11/12 h-full max-md:w-full object-cover border-2 border-gray-100" src={value.src} alt={`Imagen ${value.id}`} 
                 transition:name=`project ${value.id} image`
             />
             </a>
@@ -25,16 +25,62 @@ const { proyectos } = Astro.props;
     </div>
 </Layout>
 <style>
+    @keyframes show {
+        from {
+            opacity: 0;
+            scale: 25%;
+        }
+        to {
+            opacity: 1;
+            scale: 100%;
+        }
+    }
+    @keyframes see{
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes moveBottom {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes tiltBack {
+    from {
+        transform: perspective(500px) rotateX(60deg);
+    }
+    to {
+        transform: perspective(2500px) rotateX(0deg);
+    }
+}
+
+    img{
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: show;
+        animation-range: entry 25% cover 50%;
+        animation-fill-mode: both;
+    }
     #grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
-        row-gap: 3%;
+        row-gap: 1%;
     }
     @media (width>700px) {
         #grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         place-items: center;
         row-gap: 3%;
         }
