@@ -139,15 +139,5 @@ export const proyectos: Proyecto[] =  [
         },
         tecno: "Python - PyQt6 - SQLite ",
     }
-    ,
-    {
-        id: 14,
-        name: "Galeria animada",
-        src: "../images/astro.png",
-        cod: {
-            "code": ['https://github.com/lefasom/portfolio-2', 'faCode'],
-            "demo": ['https://portfolio-2-puce.vercel.app/', 'faLink'],
-        },
-        tecno: "Astro - Svelte - Typescript - View-transition",
-    }
+  
 ];
