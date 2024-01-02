@@ -7,15 +7,15 @@ export interface Proyecto {
 }
 
 
-export const proyectos: Proyecto[] = [
+export const proyectos: Proyecto[] =  [
     {
         id: 1,
         name: "Chatea",
         src: "../images/chatea3.png",
         cod: {
-            front: ["https://github.com/lefasom/front-chatea", "faCode"],
-            back: ["https://github.com/lefasom/back-chatea", "faCode"],
-            demo: ["https://front-chatea.vercel.app/", "faLink"],
+            "front": ['https://github.com/lefasom/front-chatea', 'faCode'],
+            "back": ['https://github.com/lefasom/back-chatea', 'faCode'],
+            'demo': ["https://front-chatea.vercel.app/", 'faLink'],
         },
         tecno: "Vue - Vuex - Node - Firebase - MongoDB",
     },
@@ -63,4 +63,91 @@ export const proyectos: Proyecto[] = [
         },
         tecno: "React Native - Firebase",
     },
+    {
+        id: 6,
+        name: "La Serafina",
+        src: "../images/serafina.png",
+        cod: {
+            "front": ['https://github.com/lefasom/la-serafina-2.0', 'faCode'],
+            'demo': ["https://la-serafina-2-0.vercel.app/", 'faLink'],
+        },
+        tecno: "Next - Firebase",
+    }
+    ,
+    {
+        id: 7,
+        name: "Rec escolar",
+        src: "../images/rec-escolar.png",
+        cod: {
+            "code": ['https://github.com/lefasom/recordatorio-escolar', 'faCode'],
+            'demo': ["https://notificacionesappescolar.000webhostapp.com/", 'faLink'],
+        },
+        tecno: "PHP - MySql",
+    }
+    ,
+    {
+        id: 9,
+        name: "Calculadora",
+        src: "../images/calculadora.png",
+        cod: {
+            "code": ['https://github.com/lefasom/calculadora', 'faCode'],
+            'demo': ["https://calculadora-theta-gules.vercel.app//", 'faLink'],
+        },
+        tecno: "JavaScript - HTML - CSS",
+    }
+    ,
+    {
+        id: 10,
+        name: "Gestor de negocio",
+        src: "../images/gestor.png",
+        cod: {
+            "code": ['https://github.com/lefasom/gestion-de-negocio', 'faCode'],
+            "mp4": ['https://drive.google.com/file/d/1HsqSBHckmDiIbkKfDiiUZXs3C_3YRUs4/view?usp=sharing', 'faLink'],
+        },
+        tecno: "Node - ejs - SQL(XAMPP)",
+    }
+    ,
+    {
+        id: 11,
+        name: "Exportar precios - Excel",
+        src: "../images/python-crud.png",
+        cod: {
+            "code": ['https://github.com/lefasom/lista-de-precios', 'faCode'],
+            "demo": ['https://lista-de-precios-2v50.onrender.com', 'faLink'],
+        },
+        tecno: "Python - Flask - MongoDB - JavaScript",
+    }
+    ,
+    {
+        id: 12,
+        name: "Crud.exe",
+        src: "../images/ejecutable.png",
+        cod: {
+            "code": ['https://github.com/lefasom/crud---Python---Tkinder---MySql', 'faCode'],
+            "mp4": ['https://drive.google.com/file/d/12U0bGQxf-AGzGshqJEoUrvJF_93688hJ/view?usp=sharing', 'faLink'],
+        },
+        tecno: "Python - Tkinder - SQL(XAMPP) - XSLX - CSV",
+    }
+    ,
+    {
+        id: 13,
+        name: "Crud_2.exe",
+        src: "../images/pyqt6.png",
+        cod: {
+            "code": ['https://github.com/lefasom/Lista-de-productos', 'faCode'],
+            "mp4": ['https://drive.google.com/file/d/1ufZhPdeH0vLlPXtZP9nkW80VCqYCuTy2/view?usp=sharing', 'faLink'],
+        },
+        tecno: "Python - PyQt6 - SQLite ",
+    }
+    ,
+    {
+        id: 14,
+        name: "Galeria animada",
+        src: "../images/astro.png",
+        cod: {
+            "code": ['https://github.com/lefasom/portfolio-2', 'faCode'],
+            "demo": ['https://portfolio-2-puce.vercel.app/', 'faLink'],
+        },
+        tecno: "Astro - Svelte - Typescript - View-transition",
+    }
 ];
