@@ -4,7 +4,7 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface FontAProps {
-  value: string;
+  value?: string;
 }
 
 const Font_A: React.FC<FontAProps> = ({ value }) => {
