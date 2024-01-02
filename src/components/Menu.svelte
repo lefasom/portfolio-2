@@ -12,9 +12,8 @@
 
 <style>
     nav{
-        background-color: #334155;
-        background-color: linear-gradient(90deg,#334155 0%, #020617 100%);
-        
+        background: rgb(51,65,85);
+        background: linear-gradient(270deg, rgba(51,65,85,1) 0%, rgba(2,6,23,1) 100%);
         font-size: 25px;
 
         animation: menu linear both;
@@ -31,7 +30,8 @@
     }
     @keyframes menu {
         to{
-            background-color: rgba(255, 255, 255, .4);
+            background: rgb(51,65,85);
+            background: linear-gradient(270deg, rgba(51,65,85,0) 100%, rgba(2,6,23,1) 100%);
             backdrop-filter: blur(5px);
             font-size: 18px;
             color: black;      
