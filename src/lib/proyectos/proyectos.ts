@@ -69,7 +69,7 @@ export const proyectos: Proyecto[] =  [
         src: "../images/serafina.png",
         cod: {
             "front": ['https://github.com/lefasom/la-serafina-2.0', 'faCode'],
-            'demo': ["https://la-serafina-2-0.vercel.app/", 'faLink'],
+            'demo': ["https://serafinamarket.vercel.app/", 'faLink'],
         },
         tecno: "Next - Firebase",
     }
